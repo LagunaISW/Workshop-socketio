@@ -29,34 +29,21 @@ module.exports.listen = function (app) {
     });
 
     //  event: enter queue
-    socket.on('enter queue', function () {
-      enterQueue(socket);
-    });
+
 
     //  event: leave queue
-    socket.on('leave queue', function () {
-      leaveQueue(socket);
-    });
+
 
     //  event: play card
-    socket.on('play card', function (index) {
-      playCard(socket, index);
-    });
+
 
     //  event: leave match
-    socket.on('leave match', function () {
-      leaveMatch(socket);
-    });
+
 
     //  event: request cards update
-    socket.on('request cards update', function () {
-      updateCardsRequested(socket);
-    });
+
 
     //  event: request rematch
-    socket.on('request rematch', function () {
-      rematchRequested(socket);
-    });
   });
   return io;
 };
