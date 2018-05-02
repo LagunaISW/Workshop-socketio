@@ -1,7 +1,6 @@
 {
   "name": "cardfu",
   "description": "Simple game based on Club Penguins Card-Jitsu",
-  "author": "Tobias Loefgren",
   "version": "0.1.0",
   "main": "server.js",
   "scripts": {
